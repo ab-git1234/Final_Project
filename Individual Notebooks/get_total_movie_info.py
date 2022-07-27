@@ -311,7 +311,21 @@ def get_total_movie_info():
     return total_movie_info
 
 
-# In[ ]:
+# Function to turn str dollar values to float
+def dollar_to_float(column):
+    new_col = column.replace('[$,()]', '', regex=True).astype(float)
+    
+    return new_col
+
+
+# Function to fill NaN values with corresponding column where available
+# otherwise 0
+def handle_NaN(col1, col2):
+    new_col = col1.fillna(col2)
+#     new_col = new_col.fillna(0)
+    
+    return new_col
+    
 
 
 
