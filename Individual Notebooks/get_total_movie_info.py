@@ -326,7 +326,15 @@ def handle_NaN(col1, col2):
     
     return new_col
     
-
+def get_clean_df():
+    df = get_total_movie_info()
+    df["clean_domestic_gross"] = handle_NaN(df["domestic_gross_movie_budgets"], df["domestic_gross_movie_gross"])
+    df["clean_worldwide_gross"] = handle_NaN(df["worldwide_gross_movie_budgets"], df["foreign_gross_movie_gross"])
+    df["clean_domestic_gross"] = dollar_to_float(df["clean_domestic_gross"])
+    df["clean_worldwide_gross"] = dollar_to_float(df["clean_worldwide_gross"])
+    df["production_budget"] = dollar_to_float(df["production_budget"])
+    
+    return df
 
 
 
