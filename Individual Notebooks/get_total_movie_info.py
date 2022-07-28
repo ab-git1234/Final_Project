@@ -291,8 +291,8 @@ def get_total_movie_info():
     #Gives us income, budget, genre, date, title, director, rating
 
     #Dropping NAN values
-    total_movie_info.dropna(subset='primary_name', inplace= True)
-    rt_movie_info.dropna(subset='director', inplace= True)
+    total_movie_info.dropna(subset=['primary_name'], inplace= True)
+    rt_movie_info.dropna(subset=['director'], inplace= True)
 
     #### Cleaning before the merge
 
