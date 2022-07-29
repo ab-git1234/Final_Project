@@ -12,10 +12,10 @@ def get_clean_df():
     This function will return clean gross financial figures for the movie data.
     """
     # movie gross data
-    movie_gross = pd.read_csv('../Data/bom.movie_gross.csv')
+    movie_gross = pd.read_csv('./Data/bom.movie_gross.csv')
 
     # connect to sql db
-    conn= sqlite3.connect("../Data/im.db")
+    conn= sqlite3.connect("./Data/im.db")
 
     #movi_basics table
     q = """
@@ -38,7 +38,7 @@ def get_clean_df():
     movie_akas_df = pd.read_sql(q, conn)
 
     # movie budget data
-    movie_budgets = pd.read_csv('../Data/tn.movie_budgets.csv')
+    movie_budgets = pd.read_csv('./Data/tn.movie_budgets.csv')
 
     # ## Combine tables from sql db
 
@@ -107,7 +107,7 @@ def get_clean_df():
     return final_gross_all
 
 def median_days_in_theater(genre):
-    rt_movie_info = pd.read_table("../Data/rt.movie_info.tsv", thousands=',')
+    rt_movie_info = pd.read_table("./Data/rt.movie_info.tsv", thousands=',')
     rt_movie_info3 = rt_movie_info
     
     rt_movie_info3['theater_date'] = pd.to_datetime(rt_movie_info3['theater_date'])
@@ -130,7 +130,7 @@ def median_days_in_theater(genre):
     return median_days
 
 def genre_list():
-    rt_movie_info = pd.read_table("../Data/rt.movie_info.tsv", thousands=',')
+    rt_movie_info = pd.read_table("./Data/rt.movie_info.tsv", thousands=',')
     rt_movie_info3 = rt_movie_info
 
     genres = rt_movie_info3['genre']
