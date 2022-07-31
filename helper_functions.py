@@ -9,7 +9,7 @@ import regex as re
 
 def get_clean_df():
     """
-    This function will return clean gross financial figures for the movie data.
+    This function will return clean gross financial and budget figures for the movie data.
     """
     # movie gross data
     movie_gross = pd.read_csv('./Data/bom.movie_gross.csv')
@@ -36,6 +36,9 @@ def get_clean_df():
     SELECT * FROM movie_akas
     """
     movie_akas_df = pd.read_sql(q, conn)
+
+    #close the connection to the sql db
+    conn.close()
 
     # movie budget data
     movie_budgets = pd.read_csv('./Data/tn.movie_budgets.csv')
