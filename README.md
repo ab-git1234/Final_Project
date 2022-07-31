@@ -7,20 +7,23 @@ Overview
 Business Understanding
 
 Project Overview
-For this project, you will use exploratory data analysis and statistical methods to generate insights for a business stakeholder.
+Discover insights into movie box office revenue from current industry data that will be used to make recomendations to Computing Vision in order to maximize the box office performance as well as popularity of their new movie production venture.
 
-Business Problem
-Computing Vision (a made-up company for the purposes of this project) sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t have much background in creating movies. You are charged with exploring what types of films are currently doing the best at the box office using different samples of available data. You then will translate those findings into actionable insights that the head of Computing Vision's new movie studio can use to help decide what type of films to create.
 
 Middle
 Data Understanding
-The team created a singular data frame, using Pandas to join all the tables on the relevent data allowing us to efficiently explore and ask questions and form hypotheses.  The core data comes from the IMDB data base giving us movie titles, revenues, ratings, production budgets and allowed us to merge supplemental details from all other sources and prepare a clear overview of box office information and start to hypothesise about what helps movies perform well.
+The team created a singular data frame, using Pandas to join all the tables on the relevent data allowing us to efficiently explore, ask questions and form hypotheses.  The core data comes from the IMDB data base giving us movie titles, revenues, ratings, production budgets and allowed us to merge supplemental details from all other sources and prepare a clear overview of box office information and start to hypothesise about what helps movies perform well.
 
+In order to narrow our recommendations we tested the correlation between foriegn and domestic gross revenue and found that they were highly correlated.  So all further data was filtered to domestic information since it can be reasonably assumed that performance will be similar.
 
-Goal:
-Highest gross
-Highest net
-Most popular through engagement.
+### ADD R^2 VIZ
+
+The aggregated, domestic data was then transformed using Panda's functions to seperate the combined genre column that described each movie with multiple tags, eg(Action, Adventure, Comedy), now each movie entry could be grouped by genre.  Allowing us to test whether one genre tag or combination of genre tags could result in higher revenue, more popular movies.
+
+Goals:
+Discover the highest grossing movie genre from the data provided.
+Discover the genre with the highest average net revenue fromt the data provided.
+Discover the ost popular genre from the data provided.
 
 
 1. Gross Box Office by genre
@@ -40,15 +43,18 @@ Most popular through engagement.
     Using the 'popularity' column from the "The Movies" database, the team investigated what genres were the most popular. The team also investigated and found Adventure is the most popular genre, while Documentaries received the highest vote score on average, but concluded the vote score caused by the outlier of having few votes all with high scores and skewing the average.  After a t test on the popularity metric we recommend that, for a goal of high popularity and engagement, a movie with the Adventure tag would perform well.
     
     
-    
-    
-    
-    
-    
-Data Analysis
-Statistical Inference
+
 End
 Recommendations
+Our recommendations to Computing Vision are:
+Make movies that can be labled as Animation, Action, and/or Sci-fi to achieve the highest box office performance.
+Make movies that can be labled as Animation and Musical to achieve the highest net revenue, ie profit.
+Make movies that can be labled as Adventure to achieve maximum popularity and public appeal.
+
 Next Steps
+Preliminary data exploration has already begun to discover which writers, directors, and actors are associated with 
+high performing movies, and who Computing Vision may seek to involve in the creative process in the future.
+*See Trevor's Notebook Appendix* *See Adam's Notebook Appendix*
+
 Thank You
 This slide should include a prompt for questions as well as your contact information (name and LinkedIn profile)
