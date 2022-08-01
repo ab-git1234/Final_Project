@@ -32,7 +32,7 @@ The Numbers movie budget details: tn.movie_budgets.csv <br>
 /Individual Notebooks: <br>
 
 #### Final work flow that calls the get_clean_df() function. <br>
-/Python Fever Final Notebook.ipynd: <br>
+/Python Fever Final Notebook.ipynb: <br>
 *  Run get_clean_df() from helper function in Python Fever Final Notebook to automate data cleaning and organization. <br>
 *  Shows additional data aggregation <br>
 *  Shows statistical analysis and visualizations <br>
