@@ -16,7 +16,7 @@ The team created a singular data frame, using Pandas to join all the tables on t
 
 In order to narrow our recommendations we tested the correlation between foriegn and domestic gross revenue and found that they were highly correlated.  So all further data was filtered to domestic information since it can be reasonably assumed that performance will be similar.
 
-### ADD R^2 VIZ
+![Correlation Scatter Plot](/Images/gross_scatter_plot.png)
 
 The aggregated, domestic data was then transformed using Panda's functions to seperate the combined genre column that described each movie with multiple tags, eg(Action, Adventure, Comedy), now each movie entry could be grouped by genre.  Allowing us to test whether one genre tag or combination of genre tags could result in higher revenue, more popular movies.
 
@@ -30,19 +30,26 @@ Discover the ost popular genre from the data provided.
     Highest performing genre
     The team first decided to investigate which genre of movie has the highest average gross revenue from the data provided.
     Used Python string access function explode() to seperate the genre column where many movie entries had many genre tags seperated by commas.
+    
+    ![Gross Box Office Revenue](/Images/top_gross.png)
+    
     Then ordered these categories by gross revenue and discovered the Animation genre had the highest box office revenue.
     t test compared to the next two highest average grossing genres, Adventure and Sci-Fi, showed a statistically significant difference in revenue and allows us to make recomendations that movies in the Animation, Adventure and Sci-Fi genre might make high revenues.
     
 
 2.  Net revenue by genre
     Using the average gross revenue and the 'budget' column from the IMDB database, the team aggregated and calculated the average net revenue. gross - budget = net
+    
+    ![Net Profit](/Images/top_net.png)
+    
     Animation, Musical, and Comedy genre tags are the top three average net revenue. Highest profit margins.  Recommend as movies to produce to make profit.
 
 
 3. Popularity by genre
     Using the 'popularity' column from the "The Movies" database, the team investigated what genres were the most popular. The team also investigated and found Adventure is the most popular genre, while Documentaries received the highest vote score on average, but concluded the vote score caused by the outlier of having few votes all with high scores and skewing the average.  After a t test on the popularity metric we recommend that, for a goal of high popularity and engagement, a movie with the Adventure tag would perform well.
     
-    
+    ![Popularity](/Images/top_popularity.png)
+    ![Top votes](/Images/top_votes.png)
 
 End
 Recommendations
