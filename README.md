@@ -85,10 +85,10 @@ Using the 'popularity' column from the "The Movies" database, the team investiga
 
 ### In conclusion our recommendations to Computing Vision are:
 #### Make movies that can be labled as Animation, Action, and/or Sci-fi to achieve the highest box office performance.
-#### Make movies that can be labled as Animation and Musical to achieve the highest net revenue, ie profit.
+#### Make movies that can be labled as Animation to achieve the highest net revenue, ie profit.
 #### Make movies that can be labled as Adventure to achieve maximum popularity and public appeal.
 
 ### Next Steps
 Preliminary data exploration has already begun to discover which writers, directors, and actors are associated with 
 high performing movies, and who Computing Vision may seek to involve in the creative process in the future.
-*See ![Appendix Notebook](/Individual Notebooks/Trevor_Notebook.ipynb).
+* See [appendix](https://github.com/adamburstyn/Final_Project/blob/main/Deliverables/Talent%20Recomendations.pdf)
