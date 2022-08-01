@@ -5,6 +5,23 @@
 ### Project Overview
 To discover insights into movie box office revenue from current industry data that will be used to make recomendations to Computing Vision in order to maximize the box office performance as well as popularity of their new movie production venture.
 
+### Data Structure
+
+/helper_functions.py:
+Helper functions stored in helper_functions.py.
+Run get_clean_df() from helper function to automate data cleaning and organization.
+
+/Data:
+Gross Revenue CSV: bom.movie_gross.csv
+IMDB movie database: im.db
+Rotten Tomatoes movie details: rt.movie_info.tsv
+Rotten Tomatoes movie review data: rt.reviews.tsv
+The Movies Database details CSV: tmdb.movies.csv
+The Numbers movie budget details: tn.movie_budgets.csv
+
+/Individual Notebooks:
+Notebooks with indendant exploration and further research by team members.
+
 
 
 ### Data Understanding
@@ -58,4 +75,4 @@ Using the 'popularity' column from the "The Movies" database, the team investiga
 ### Next Steps
 Preliminary data exploration has already begun to discover which writers, directors, and actors are associated with 
 high performing movies, and who Computing Vision may seek to involve in the creative process in the future.
-*See Trevor's Notebook Appendix
+*See ![Appendix Notebook](/Individual Notebooks/Trevor_Notebook.ipynb).
