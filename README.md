@@ -11,16 +11,22 @@ To discover insights into movie box office revenue from current industry data th
 Helper functions stored in helper_functions.py.
 Run get_clean_df() from helper function to automate data cleaning and organization.
 
-/Data:
-Gross Revenue CSV: bom.movie_gross.csv
-IMDB movie database: im.db
-Rotten Tomatoes movie details: rt.movie_info.tsv
-Rotten Tomatoes movie review data: rt.reviews.tsv
-The Movies Database details CSV: tmdb.movies.csv
-The Numbers movie budget details: tn.movie_budgets.csv
+/Data: <br>
+Gross Revenue CSV: bom.movie_gross.csv <br>
+IMDB movie database: im.db <br>
+Rotten Tomatoes movie details: rt.movie_info.tsv <br>
+Rotten Tomatoes movie review data: rt.reviews.tsv <br>
+The Movies Database details CSV: tmdb.movies.csv <br>
+The Numbers movie budget details: tn.movie_budgets.csv <br>
 
-/Individual Notebooks:
-Notebooks with indendant exploration and further research by team members.
+/Individual Notebooks: <br>
+Notebooks with indendant exploration and further research by team members. <br>
+
+/Python Fever Final Notebook.ipynd: <br>
+Final work flow that calls the get_clean_df() function. <br>
+Shows additional data aggregation <br>
+Shows statistical analysis and visualizations <br>
+Shows conclusions and business recomendations. <br>
 
 
 
