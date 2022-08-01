@@ -19,7 +19,7 @@ The aggregated, domestic data was then transformed using Panda's functions to se
 ### Goals:
 #### Discover the highest grossing movie genre from the data provided.
 #### Discover the genre with the highest average net revenue from the data provided.
-#### Discover the ost popular genre from the data provided.
+#### Discover the most popular genre from the data provided.
 
 
 ### Gross Box Office by genre
