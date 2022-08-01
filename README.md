@@ -3,15 +3,25 @@
 #### Python Fever - Danish Ali, Adam Burstyn, Trevor Flanagan, Ian Haas, Hope Miller
 
 ### Project Overview
-To discover insights into movie box office revenue from current industry data that will be used to make recomendations to Computing Vision in order to maximize the box office performance as well as popularity of their new movie production venture.
+To discover insights into movie box office revenue from current industry data that will be used to make recomendations to Computing Vision in order to maximize the box office performance as well as popularity of their new movie production venture. <br>
+
+Specifically focus on genres of movie that have: <br>
+The highest gross revenue. <br>
+The highest net profit. <br>
+The highest popularity according to total internet interaction. <br>
+
+Provided data included domestic as well as international reveneus. Domestic revenue was used for analysis after linear regression confirmed they were highly correlated, and any recommendations should be applicable to both foriegn and domestic audiences.
+
+Mean revenue values will be used for comparison so that high outlier values are counted since a high outlier, ie high grossing, film is desirable.
 
 ### Data Structure
 
 /helper_functions.py:
 Helper functions stored in helper_functions.py.
-Run get_clean_df() from helper function to automate data cleaning and organization.
+Run get_clean_df() from helper function in Python Fever Final Notebook to automate data cleaning and organization.
 
-/Data: <br>
+#### Data that should be unzipped into a folder called /Data in order to run the notebook locally.
+/zippedData: <br>
 Gross Revenue CSV: bom.movie_gross.csv <br>
 IMDB movie database: im.db <br>
 Rotten Tomatoes movie details: rt.movie_info.tsv <br>
@@ -58,7 +68,7 @@ t test compared to the next two highest average grossing genres, Adventure and S
 ###   Net revenue by genre
 Using the average gross revenue and subtracting the budget column from the IMDB database that describes the amount of money budgeted to make the film, the team aggregated and calculated the average net revenue.
 
-(![Net Profit](/Images/top_net.png))
+![Net Profit](/Images/top_net.png)
 
 Animation, Musical, and Comedy genre tags have the top three average net revenues. ___We make the recomendation that, for highest profit margins, Computing Vision should produce movies that can be lables as Animation, Musical, and Comedy.__
 
