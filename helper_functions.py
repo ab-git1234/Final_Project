@@ -17,7 +17,7 @@ def get_clean_df():
     # connect to sql db
     conn= sqlite3.connect("./Data/im.db")
 
-    #movi_basics table
+    #movie_basics table
     q = """
     SELECT *
     FROM movie_basics
