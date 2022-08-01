@@ -91,4 +91,5 @@ Using the 'popularity' column from the "The Movies" database, the team investiga
 ### Next Steps
 Preliminary data exploration has already begun to discover which writers, directors, and actors are associated with 
 high performing movies, and who Computing Vision may seek to involve in the creative process in the future.
-* See [appendix](https://github.com/adamburstyn/Final_Project/blob/main/Deliverables/Talent%20Recomendations.pdf)
+* See [the supplemental presentation material from Trevor](https://github.com/adamburstyn/Final_Project/blob/main/Deliverables/Talent%20Recomendations.pdf)
+* See [the optimization model from Adam](https://github.com/adamburstyn/Final_Project/blob/main/Individual%20Notebooks/Adam_Optimization_Model.ipynb)
