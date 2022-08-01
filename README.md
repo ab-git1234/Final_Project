@@ -16,9 +16,8 @@ Mean revenue values will be used for comparison so that high outlier values are 
 
 ### Data Structure
 
+#### Helper functions stored in helper_functions.py.
 /helper_functions.py:
-Helper functions stored in helper_functions.py.
-Run get_clean_df() from helper function in Python Fever Final Notebook to automate data cleaning and organization.
 
 #### Data that should be unzipped into a folder called /Data in order to run the notebook locally.
 /zippedData: <br>
@@ -29,14 +28,15 @@ Rotten Tomatoes movie review data: rt.reviews.tsv <br>
 The Movies Database details CSV: tmdb.movies.csv <br>
 The Numbers movie budget details: tn.movie_budgets.csv <br>
 
+#### Notebooks with indendant exploration and further research by team members. <br>
 /Individual Notebooks: <br>
-Notebooks with indendant exploration and further research by team members. <br>
 
-/Python Fever Final Notebook.ipynd: <br>
-Final work flow that calls the get_clean_df() function. <br>
-Shows additional data aggregation <br>
-Shows statistical analysis and visualizations <br>
-Shows conclusions and business recomendations. <br>
+#### Final work flow that calls the get_clean_df() function. <br>
+/Python Fever Final Notebook.ipynb: <br>
+*  Run get_clean_df() from helper function in Python Fever Final Notebook to automate data cleaning and organization. <br>
+*  Shows additional data aggregation <br>
+*  Shows statistical analysis and visualizations <br>
+*  Shows conclusions and business recomendations. <br>
 
 
 
@@ -85,10 +85,10 @@ Using the 'popularity' column from the "The Movies" database, the team investiga
 
 ### In conclusion our recommendations to Computing Vision are:
 #### Make movies that can be labled as Animation, Action, and/or Sci-fi to achieve the highest box office performance.
-#### Make movies that can be labled as Animation and Musical to achieve the highest net revenue, ie profit.
+#### Make movies that can be labled as Animation to achieve the highest net revenue, ie profit.
 #### Make movies that can be labled as Adventure to achieve maximum popularity and public appeal.
 
 ### Next Steps
 Preliminary data exploration has already begun to discover which writers, directors, and actors are associated with 
 high performing movies, and who Computing Vision may seek to involve in the creative process in the future.
-*See ![Appendix Notebook](/Individual Notebooks/Trevor_Notebook.ipynb).
+* See [appendix](https://github.com/adamburstyn/Final_Project/blob/main/Deliverables/Talent%20Recomendations.pdf)
