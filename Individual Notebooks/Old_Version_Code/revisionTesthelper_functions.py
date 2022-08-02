@@ -374,7 +374,7 @@ def get_clean_df():
     total_movie_info_all["clean_worldwide_gross"] = handle_NaN(total_movie_info_all["worldwide_gross_movie_budgets"], total_movie_info_all["foreign_gross_movie_gross"])
     total_movie_info_all["clean_domestic_gross"] = dollar_to_float(total_movie_info_all["clean_domestic_gross"])
     total_movie_info_all["clean_worldwide_gross"] = dollar_to_float(total_movie_info_all["clean_worldwide_gross"])
-        total_movie_info_all["production_budget"] = dollar_to_float(total_movie_info_all["production_budget"])
+    total_movie_info_all["production_budget"] = dollar_to_float(total_movie_info_all["production_budget"])
 
     return total_movie_info_all
 
